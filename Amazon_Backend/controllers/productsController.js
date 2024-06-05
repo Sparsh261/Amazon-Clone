@@ -1,26 +1,26 @@
 const productModel = require('../models/productsModel.js');
 
 const getAllProducts = async (req, res) => {
-    const {sort='price',page=1,pageSize=100,fields="-info",...q} = req.query;
+    const { sort = 'price', page = 1, pageSize = 100, fields = "-info", ...q } = req.query;
     try {
         console.log(q.title)
         let query = productModel.find();
         let title = q.title;
-        if(title){
+        if (title) {
             //  query = productModel.find(q);
-             query = productModel.find({title:{"$regex":q.title}});
+            query = productModel.find({ title: { "$regex": q.title } });
         }
 
-        query  = query.sort(sort.split(',').join(' '));
+        query = query.sort(sort.split(',').join(' '));
 
-        const skip = pageSize * (page-1);
-        const  limit = pageSize;
+        const skip = pageSize * (page - 1);
+        const limit = pageSize;
         query = query.skip(skip).limit(limit);
 
         query = query.select(fields.split(',').join(' '));
 
-        const data = await query.populate({path:"review",model:"Reviews"})
-        .then((result)=>{return result}).catch((err)=>console.log(err));
+        const data = await query.populate({ path: "review", model: "Reviews" })
+            .then((result) => { return result }).catch((err) => console.log(err));
 
         const totalResults = await productModel.countDocuments()
 
@@ -49,7 +49,7 @@ const getAllProducts = async (req, res) => {
 const addProducts = async (req, res) => {
 
     try {
-        const {_id,...reqBody} = req.body
+        const { _id, ...reqBody } = req.body
         const data = await productModel.create(reqBody)
         res.json({
             status: "success",
@@ -69,61 +69,61 @@ const addProducts = async (req, res) => {
     }
 }
 
-const replaceProduct = async(req,res)=>{
-    try{
+const replaceProduct = async (req, res) => {
+    try {
         const reqId = req.params.id;
-        const data = {...req.body};
-        const ans = await productModel.findOneAndReplace( { _id : reqId } , data );
+        const data = { ...req.body };
+        const ans = await productModel.findOneAndReplace({ _id: reqId }, data);
 
         res.json({
-            status:"success",
-            results:1,
-            message:"Changed"
+            status: "success",
+            results: 1,
+            message: "Changed"
         })
     }
-    catch(err){
+    catch (err) {
         res.json({
-            status:"failes",
-            message:err
-        })
-    }
-}
-
-const updateProducts = async(req,res)=>{
-    try{
-        const {_id,...data} = req.body
-    const ans = await productModel.findOneAndUpdate( {_id : req.params.id} , data);
-    res.json({
-        status:"success",
-        results:1,
-        message:ans
-    })
-    }
-    catch(err){
-        res.json({
-            status:"failed",
-            results:1,
-            message:err
+            status: "failes",
+            message: err
         })
     }
 }
 
-const deleteProducts = async(req,res)=>{
+const updateProducts = async (req, res) => {
+    try {
+        const { _id, ...data } = req.body
+        const ans = await productModel.findOneAndUpdate({ _id: req.params.id }, data);
+        res.json({
+            status: "success",
+            results: 1,
+            message: ans
+        })
+    }
+    catch (err) {
+        res.json({
+            status: "failed",
+            results: 1,
+            message: err
+        })
+    }
+}
 
-    try{
+const deleteProducts = async (req, res) => {
+
+    try {
         const ans = await productModel.deleteMany(
-                            {"title":req.params.title} ||  {"price":req.params.id, "title":req.params.title});
-                            res.json({
-                                status:"success",
-                                results:1,
-                                message:ans
-                            })
-    }
-    catch(err){
+            { "title": req.params.title } || { "price": req.params.id, "title": req.params.title });
         res.json({
-            status:"failed",
-            results:1,
-            message:err
+            status: "success",
+            results: 1,
+            message: ans
+        })
+    }
+    catch (err) {
+        res.json({
+            status: "failed",
+            results: 1,
+            message: err
         })
     }
 }

@@ -10,7 +10,11 @@ const usersSchema = mongoose.Schema({
         required:true,
         unique:true
     },
-    phone:Number
+    password:{
+        type:String,
+        required:true,
+        unique:true
+    }
 })
 
 const usersModel = mongoose.model("users",usersSchema);
