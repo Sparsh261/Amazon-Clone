@@ -3,7 +3,7 @@ const productModel = require('../models/productsModel.js');
 const getAllProducts = async (req, res) => {
     const { sort = 'price', page = 1, pageSize = 100, fields = "-info", ...q } = req.query;
     try {
-        console.log(q.title)
+        // console.log(q.title)
         let query = productModel.find();
         let title = q.title;
         if (title) {

@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 import Carousel from './Carousel'
-import Categoryrow from './categoryRow'
+// import Categoryrow from './categoryRow'
 import Footer from './Footer'
 import { useState } from 'react'
 
@@ -12,7 +12,7 @@ const Homepage = ()=>{
     return(
        <div>
         <Navbar setQuery={setQuery}/>
-        <Categoryrow/>
+        {/* <Categoryrow/> */}
         <Carousel query={query}/>
         <Footer/>
        </div>

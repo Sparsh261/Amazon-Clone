@@ -50,7 +50,7 @@ const Carousel = ({ query }) => {
             <div className="content">
                 {data.map(elem => {
                     return (
-                        <div key={elem.id_}>
+                        <div key={elem.id}>
                             <Card elem={elem} />
                         </div>
                     )

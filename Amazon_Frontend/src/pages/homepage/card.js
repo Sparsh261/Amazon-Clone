@@ -2,7 +2,7 @@
 const Card = ({elem}) => {
     // console.log(1)
     return (
-        <div className="card">
+        <div className="card" >
             <h4 className="card-title">{elem.title}</h4>
             <img className="card-img" src={elem?.images[1]} alt="" />
                 <button className="card-button">Add to cart</button>

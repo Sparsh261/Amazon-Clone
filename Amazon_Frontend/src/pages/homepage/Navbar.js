@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
-import {Link} from "react-router-dom"
+import { Link , useNavigate } from "react-router-dom"
 import Carousel from "./Carousel";
 
 
-const Navbar = ({setQuery}) => {
+const Navbar = ({ setQuery }) => {
+
+    const navigate = useNavigate();
 
     let [toSearch, settoSearch] = useState('');
 
@@ -11,12 +13,17 @@ const Navbar = ({setQuery}) => {
         setQuery(toSearch)
     }, [toSearch])
 
+    const handleLogout = ()=>{
+        // e.preventDefault();
+        localStorage.removeItem("authTokens");
+        // navigate("/login");
+    }
 
     return (
         <div class="navbar ">
             <div class="nav-logo border">
                 <div class="logo">
-                <a name="top"></a>
+                    <a name="top"></a>
                 </div>
             </div>
 
@@ -31,7 +38,7 @@ const Navbar = ({setQuery}) => {
                     <option>All </option>
                 </select>
                 <input type="text" placeholder="Search Amazon" value={toSearch}
-                     onChange={(e) => { settoSearch(e.target.value) }} />
+                    onChange={(e) => { settoSearch(e.target.value) }} />
                 <div class="search-bar-logo">
                     <button >
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -39,20 +46,33 @@ const Navbar = ({setQuery}) => {
                 </div>
             </div>
 
-            <div class="signin border">
-                <Link to="/signup"class="line1"> Hello,Sign in </Link>
-                <p class="line2">Accounts & Requests</p>
+            <div>
+            {
+                (!localStorage.getItem("authTokens")) ?
+                    <div class="signin border">
+                        <Link to="/signup" class="line1"> Hello,Sign Up </Link>
+                    </div> 
+                    :
+                    <div class="signin border">
+                        <Link to="/signup" class="line1" onClick={handleLogout}> Log out </Link>
+                    </div>
+            }
             </div>
 
-            <div class="signin border">
-                <p class="line1">Returns</p>
-                <p class="line2">& orders</p>
-            </div>
+            {localStorage.getItem("authTokens") ?
+                <div class="signin border">
+                    <p class="line1">Returns</p>
+                    <p class="line2">& orders</p>
+                </div> : ""
+            }
 
-            <div class="cart border">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Cart
-            </div>
+            {localStorage.getItem("authTokens") ?
+                <div class="cart border">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    My Cart
+                </div> : ""
+            }
+
         </div>
     )
 }

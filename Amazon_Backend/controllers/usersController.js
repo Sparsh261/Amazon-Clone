@@ -11,7 +11,6 @@ const getAllUsers = async(req,res)=>{
 
 const addUsers = async(req,res) => {
     const {name,email,password} = req.body;
-    console.log(name,email,password)
     const salt = await bcrypt.genSalt(10);
     const secretPassword = await bcrypt.hash(password,salt);
     try{
@@ -25,8 +24,10 @@ const addUsers = async(req,res) => {
         })
     }
     catch(err){
+        // console.log(err)
         res.json({
-            status:err
+            status:err,
+            msg:"Email Exists"
         })
     }
 }
@@ -38,13 +39,13 @@ const verifyUsers = async(req,res) => {
     try{
         if(!user){
             res.json({
+                status:"false",
                 msg:"No Account Found"
             })
         } 
         else{
             const chkPass = await bcrypt.compare(password,user.password);
             if(chkPass){
-
                 const data = {
                     user:{
                         id:user.id
@@ -52,12 +53,14 @@ const verifyUsers = async(req,res) => {
                 }
                 const authToken = jwt.sign(data,jwtSecretKey);
                 res.json({
+                    status:"true",
                     users:user,
                     authToken: authToken
                 })
             }
             else{
                 res.json({
+                    status:"false",
                     msg:"Invalid Credentials"
                 })
             }

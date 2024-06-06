@@ -15,7 +15,7 @@ const Login = () => {
 
     const userAdd = async (e) => {
         e.preventDefault();
-        const res = await fetch(`http://localhost:1400/users/signup`, {
+        const res = await fetch(`http://localhost:1400/users/login`, {
             method: 'POST',
             body: JSON.stringify({
                 "email": e.target[0].value,
@@ -27,7 +27,13 @@ const Login = () => {
         })
 
         const data = await res.json();
-        navigate('/');
+        // console.log(data)
+        if(data.status === "true"){
+            localStorage.setItem("authTokens",data.authToken)
+            navigate('/');
+
+        }
+        else alert(data.msg)
     }
 
     return (

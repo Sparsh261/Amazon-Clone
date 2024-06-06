@@ -1,6 +1,6 @@
 const Categoryrow = () => {
-    return(
-         <div class="panel">
+    return (
+        <div class="panel">
             <div class="all-panel border">
                 <i class="fa-solid fa-bars"></i>
                 All
