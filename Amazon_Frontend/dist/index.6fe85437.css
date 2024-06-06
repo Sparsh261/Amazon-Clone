@@ -240,4 +240,32 @@
   padding-top: 20px;
   font-size: 20px;
 }
+
+#signup {
+  background-color: #008b8b;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+#signup form {
+  flex-flow: column wrap;
+  justify-content: center;
+  display: flex;
+}
+
+#signup label {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#signup input {
+  color: #000;
+  border-radius: 10px;
+  font-size: 1.3em;
+}
 /*# sourceMappingURL=index.6fe85437.css.map */

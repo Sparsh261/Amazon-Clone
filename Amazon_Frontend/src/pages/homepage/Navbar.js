@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import {Link} from "react-router-dom"
 import Carousel from "./Carousel";
 
 
@@ -39,7 +40,7 @@ const Navbar = ({setQuery}) => {
             </div>
 
             <div class="signin border">
-                <p class="line1">Hello,Sign in</p>
+                <Link to="/signup"class="line1"> Hello,Sign in </Link>
                 <p class="line2">Accounts & Requests</p>
             </div>
 

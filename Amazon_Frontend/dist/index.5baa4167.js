@@ -2975,7 +2975,7 @@ const App = ()=>{
             }, undefined)
         },
         {
-            path: "/users/signup",
+            path: "/signup",
             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
                 fileName: "app.js",
                 lineNumber: 24,
@@ -2983,7 +2983,7 @@ const App = ()=>{
             }, undefined)
         },
         {
-            path: "/users/login",
+            path: "/login",
             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
                 fileName: "app.js",
                 lineNumber: 28,
@@ -27340,6 +27340,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
 var _carousel = require("./Carousel");
 var _carouselDefault = parcelHelpers.interopDefault(_carousel);
 var _s = $RefreshSig$();
@@ -27362,17 +27363,17 @@ const Navbar = ({ setQuery })=>{
                         name: "top"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 18,
+                        lineNumber: 19,
                         columnNumber: 17
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Navbar.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27383,14 +27384,14 @@ const Navbar = ({ setQuery })=>{
                         children: "Deliver to"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                         class: "fa-solid fa-location-dot"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27398,13 +27399,13 @@ const Navbar = ({ setQuery })=>{
                         children: "India"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27415,12 +27416,12 @@ const Navbar = ({ setQuery })=>{
                             children: "All "
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Navbar.js",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27432,7 +27433,7 @@ const Navbar = ({ setQuery })=>{
                         }
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27442,34 +27443,35 @@ const Navbar = ({ setQuery })=>{
                                 class: "fa-solid fa-magnifying-glass"
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/Navbar.js",
-                                lineNumber: 36,
+                                lineNumber: 37,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Navbar.js",
-                            lineNumber: 35,
+                            lineNumber: 36,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 34,
+                        lineNumber: 35,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 class: "signin border",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/signup",
                         class: "line1",
-                        children: "Hello,Sign in"
+                        children: " Hello,Sign in "
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 42,
+                        lineNumber: 43,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27477,13 +27479,13 @@ const Navbar = ({ setQuery })=>{
                         children: "Accounts & Requests"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27494,7 +27496,7 @@ const Navbar = ({ setQuery })=>{
                         children: "Returns"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 47,
+                        lineNumber: 48,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27502,13 +27504,13 @@ const Navbar = ({ setQuery })=>{
                         children: "& orders"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 48,
+                        lineNumber: 49,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27518,20 +27520,20 @@ const Navbar = ({ setQuery })=>{
                         class: "fa-solid fa-cart-shopping"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 17
                     }, undefined),
                     "Cart"
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/homepage/Navbar.js",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 9
     }, undefined);
 };
@@ -27546,7 +27548,7 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Carousel":"8Ro6d"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Carousel":"8Ro6d","react-router-dom":"9xmpe"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27890,452 +27892,7 @@ $RefreshReg$(_c, "Card");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieYIs":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c8c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c8c0.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Categoryrow = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        class: "panel",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "all-panel border",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                        class: "fa-solid fa-bars"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/categoryRow.js",
-                        lineNumber: 5,
-                        columnNumber: 17
-                    }, undefined),
-                    "All"
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/homepage/categoryRow.js",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "panel-items",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "items border",
-                        children: "Todays Deals"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/categoryRow.js",
-                        lineNumber: 9,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "items border",
-                        children: "Customer Service"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/categoryRow.js",
-                        lineNumber: 10,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "items border",
-                        children: "Registry"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/categoryRow.js",
-                        lineNumber: 11,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "items border",
-                        children: "Gift Cards"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/categoryRow.js",
-                        lineNumber: 12,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "items border",
-                        children: "Sell"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/categoryRow.js",
-                        lineNumber: 13,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/homepage/categoryRow.js",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/homepage/categoryRow.js",
-        lineNumber: 3,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Categoryrow;
-exports.default = Categoryrow;
-var _c;
-$RefreshReg$(_c, "Categoryrow");
-
-  $parcel$ReactRefreshHelpers$c8c0.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lENFd":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$731c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$731c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        class: "footer",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "to-top",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "#top",
-                    children: "Back to top"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/Footer.js",
-                    lineNumber: 6,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/pages/homepage/Footer.js",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "panel1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "panel11",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Get to Know Us"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 10,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Careers"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 11,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Blog"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 12,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "About Amazon"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 13,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Investor Relations"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 14,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Devices"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 15,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Science"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 16,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/homepage/Footer.js",
-                        lineNumber: 9,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "panel11",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Get to Know Us"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 19,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Careers"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 20,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Blog"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 21,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "About Amazon"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 22,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Investor Relations"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 23,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Devices"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 24,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Science"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 25,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/homepage/Footer.js",
-                        lineNumber: 18,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "panel11",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Get to Know Us"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 28,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Careers"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 29,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Blog"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 30,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "About Amazon"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 31,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Investor Relations"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 32,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Devices"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 33,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Science"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 34,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/homepage/Footer.js",
-                        lineNumber: 27,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "panel11",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Get to Know Us"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 37,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Careers"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 38,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Blog"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 39,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "About Amazon"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 40,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Investor Relations"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 41,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Devices"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 42,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "Amazon Science"
-                            }, void 0, false, {
-                                fileName: "src/pages/homepage/Footer.js",
-                                lineNumber: 43,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/homepage/Footer.js",
-                        lineNumber: 36,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/homepage/Footer.js",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "panel2",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    class: "logo"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/Footer.js",
-                    lineNumber: 47,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/pages/homepage/Footer.js",
-                lineNumber: 46,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "panel3",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Conditions of Use Privacy Notice Your Ads Privacy Choices"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/Footer.js",
-                        lineNumber: 52,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: " \xa9 1996-2023, Amazon.com, Inc. or its affiliates"
-                    }, void 0, false, {
-                        fileName: "src/pages/homepage/Footer.js",
-                        lineNumber: 53,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/homepage/Footer.js",
-                lineNumber: 51,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/homepage/Footer.js",
-        lineNumber: 4,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$731c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -35028,7 +34585,452 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7gQcB":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ieYIs":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c8c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c8c0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Categoryrow = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        class: "panel",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "all-panel border",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                        class: "fa-solid fa-bars"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/categoryRow.js",
+                        lineNumber: 5,
+                        columnNumber: 17
+                    }, undefined),
+                    "All"
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/categoryRow.js",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "panel-items",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "items border",
+                        children: "Todays Deals"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/categoryRow.js",
+                        lineNumber: 9,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "items border",
+                        children: "Customer Service"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/categoryRow.js",
+                        lineNumber: 10,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "items border",
+                        children: "Registry"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/categoryRow.js",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "items border",
+                        children: "Gift Cards"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/categoryRow.js",
+                        lineNumber: 12,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "items border",
+                        children: "Sell"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/categoryRow.js",
+                        lineNumber: 13,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/categoryRow.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/homepage/categoryRow.js",
+        lineNumber: 3,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Categoryrow;
+exports.default = Categoryrow;
+var _c;
+$RefreshReg$(_c, "Categoryrow");
+
+  $parcel$ReactRefreshHelpers$c8c0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lENFd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$731c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$731c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        class: "footer",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "to-top",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "#top",
+                    children: "Back to top"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/Footer.js",
+                    lineNumber: 6,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/homepage/Footer.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "panel1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "panel11",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Get to Know Us"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 10,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Careers"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 11,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Blog"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 12,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "About Amazon"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 13,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Investor Relations"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 14,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Devices"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 15,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Science"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 16,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/Footer.js",
+                        lineNumber: 9,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "panel11",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Get to Know Us"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 19,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Careers"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 20,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Blog"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 21,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "About Amazon"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 22,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Investor Relations"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 23,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Devices"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 24,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Science"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 25,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/Footer.js",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "panel11",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Get to Know Us"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 28,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Careers"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 29,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Blog"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 30,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "About Amazon"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 31,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Investor Relations"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 32,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Devices"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 33,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Science"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 34,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/Footer.js",
+                        lineNumber: 27,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "panel11",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Get to Know Us"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 37,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Careers"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 38,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Blog"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 39,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "About Amazon"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 40,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Investor Relations"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 41,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Devices"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 42,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                children: "Amazon Science"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/Footer.js",
+                                lineNumber: 43,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/Footer.js",
+                        lineNumber: 36,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/Footer.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "panel2",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "logo"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/Footer.js",
+                    lineNumber: 47,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/homepage/Footer.js",
+                lineNumber: 46,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "panel3",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Conditions of Use Privacy Notice Your Ads Privacy Choices"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/Footer.js",
+                        lineNumber: 52,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: " \xa9 1996-2023, Amazon.com, Inc. or its affiliates"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/Footer.js",
+                        lineNumber: 53,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/Footer.js",
+                lineNumber: 51,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/homepage/Footer.js",
+        lineNumber: 4,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$731c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7gQcB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d379 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35038,15 +35040,154 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const SignUp = ()=>{
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const [userName, setUserName] = (0, _react.useState)();
+    const [userEmail, setUserEmail] = (0, _react.useState)();
+    const [userPassword, setUserPassword] = (0, _react.useState)();
+    const userAdd = async (e)=>{
+        e.preventDefault();
+        const res = await fetch(`http://localhost:1400/users/signup`, {
+            method: "POST",
+            body: JSON.stringify({
+                "name": e.target[0].value,
+                "email": e.target[1].value,
+                "password": e.target[2].value
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await res.json();
+        console.log(data);
+        navigate("/login");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "hello"
+        id: "signup",
+        className: "container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            onSubmit: userAdd,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: "name",
+                    children: "Name:"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 36,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    id: "name",
+                    name: "name",
+                    required: true,
+                    onChange: (e)=>{
+                        setUserName(e.target.value);
+                    }
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 37,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 37,
+                    columnNumber: 114
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: "email",
+                    children: "Email"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 38,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    id: "email",
+                    name: "email",
+                    onChange: (e)=>{
+                        setUserEmail(e.target.value);
+                    },
+                    required: true
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 39,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 39,
+                    columnNumber: 119
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: "password",
+                    children: "Password:"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 40,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "password",
+                    id: "password",
+                    name: "password",
+                    onChange: (e)=>{
+                        setUserPassword(e.target.value);
+                    },
+                    required: true
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 41,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 41,
+                    columnNumber: 132
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 42,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/login",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Already a user"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/signup.js",
+                        lineNumber: 43,
+                        columnNumber: 35
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/signup.js",
+                    lineNumber: 43,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/homepage/signup.js",
+            lineNumber: 35,
+            columnNumber: 13
+        }, undefined)
     }, void 0, false, {
         fileName: "src/pages/homepage/signup.js",
-        lineNumber: 3,
+        lineNumber: 34,
         columnNumber: 9
     }, undefined);
 };
+_s(SignUp, "RyKG4cA70K72sXKGr2ma9nlnvuc=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = SignUp;
 exports.default = SignUp;
 var _c;
@@ -35057,7 +35198,7 @@ $RefreshReg$(_c, "SignUp");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kn9Bj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe"}],"kn9Bj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$305a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35067,15 +35208,125 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const Login = ()=>{
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const [userEmail, setUserEmail] = (0, _react.useState)();
+    const [userPassword, setUserPassword] = (0, _react.useState)();
+    const userAdd = async (e)=>{
+        e.preventDefault();
+        const res = await fetch(`http://localhost:1400/users/signup`, {
+            method: "POST",
+            body: JSON.stringify({
+                "email": e.target[0].value,
+                "password": e.target[1].value
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await res.json();
+        navigate("/");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "hello"
+        id: "signup",
+        className: "container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            onSubmit: userAdd,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: "email",
+                    children: "Email:"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 36,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    id: "email",
+                    name: "email",
+                    onChange: (e)=>{
+                        setUserEmail(e.target.value);
+                    },
+                    required: true
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 37,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 37,
+                    columnNumber: 122
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    htmlFor: "password",
+                    children: "Password:"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 38,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "password",
+                    id: "password",
+                    name: "password",
+                    onChange: (e)=>{
+                        setUserPassword(e.target.value);
+                    },
+                    required: true
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 39,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 39,
+                    columnNumber: 135
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 40,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/login",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Already a user"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/login.js",
+                        lineNumber: 41,
+                        columnNumber: 35
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/login.js",
+                    lineNumber: 41,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/homepage/login.js",
+            lineNumber: 35,
+            columnNumber: 13
+        }, undefined)
     }, void 0, false, {
         fileName: "src/pages/homepage/login.js",
-        lineNumber: 3,
+        lineNumber: 34,
         columnNumber: 9
     }, undefined);
 };
+_s(Login, "nezD79EcunQ5DbbHsLv9xvw+tPc=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = Login;
 exports.default = Login;
 var _c;
@@ -35086,6 +35337,6 @@ $RefreshReg$(_c, "Login");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire0814")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire0814")
 
 //# sourceMappingURL=index.5baa4167.js.map

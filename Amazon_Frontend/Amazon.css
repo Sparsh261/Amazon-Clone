@@ -250,3 +250,34 @@
     text-align: center;
     padding-top: 20px;
 }
+
+#signup{
+    height: 100vh;
+    background-color:darkcyan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#signup label{
+    
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#signup input{
+    color: black;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
