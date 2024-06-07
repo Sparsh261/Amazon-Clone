@@ -3,9 +3,10 @@
     padding: 0;
     color: white;
     border: border-box;
+    font-family: poppins;
 }
 
-.navbar{
+.navbar1{
     background-color: black;
     height:60px;
     display: flex;
@@ -174,12 +175,13 @@
     color: black;
 }
 
-.card-button{
+.cardButton{
     color: black;
     margin: 0.4em;
     font-size: 1em;
     padding: 0.2em;
     border-radius: 10px;
+    /* display: inline; */
 }
 
 .card-info{

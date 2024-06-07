@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link , useNavigate } from "react-router-dom"
-import Carousel from "./Carousel";
-
+import Modal from "./Modal";
+import Cart from "./Cart"
 
 const Navbar = ({ setQuery }) => {
 
@@ -13,6 +13,8 @@ const Navbar = ({ setQuery }) => {
         setQuery(toSearch)
     }, [toSearch])
 
+    const [cartView, setCartView] = useState(false)
+
     const handleLogout = ()=>{
         // e.preventDefault();
         localStorage.removeItem("authTokens");
@@ -20,7 +22,7 @@ const Navbar = ({ setQuery }) => {
     }
 
     return (
-        <div class="navbar ">
+        <div class="navbar1 ">
             <div class="nav-logo border">
                 <div class="logo">
                     <a name="top"></a>
@@ -67,11 +69,12 @@ const Navbar = ({ setQuery }) => {
             }
 
             {localStorage.getItem("authTokens") ?
-                <div class="cart border">
+                <div class="cart border" onClick={()=>{setCartView(true)}}>
                     <i class="fa-solid fa-cart-shopping"></i>
                     My Cart
                 </div> : ""
             }
+        {cartView ? <Modal onClose={() => setCartView(false)}><Cart></Cart></Modal> : ""}
 
         </div>
     )

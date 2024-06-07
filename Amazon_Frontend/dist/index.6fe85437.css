@@ -3,9 +3,10 @@
   border: border-box;
   margin: 0;
   padding: 0;
+  font-family: poppins;
 }
 
-.navbar {
+.navbar1 {
   background-color: #000;
   justify-content: space-evenly;
   align-items: center;
@@ -161,7 +162,7 @@
   font-size: 2em;
 }
 
-.card-button {
+.cardButton {
   color: #000;
   border-radius: 10px;
   margin: .4em;

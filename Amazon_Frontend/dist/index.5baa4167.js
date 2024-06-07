@@ -27335,8 +27335,10 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
-var _carousel = require("./Carousel");
-var _carouselDefault = parcelHelpers.interopDefault(_carousel);
+var _modal = require("./Modal");
+var _modalDefault = parcelHelpers.interopDefault(_modal);
+var _cart = require("./Cart");
+var _cartDefault = parcelHelpers.interopDefault(_cart);
 var _s = $RefreshSig$();
 const Navbar = ({ setQuery })=>{
     _s();
@@ -27347,13 +27349,14 @@ const Navbar = ({ setQuery })=>{
     }, [
         toSearch
     ]);
+    const [cartView, setCartView] = (0, _react.useState)(false);
     const handleLogout = ()=>{
         // e.preventDefault();
         localStorage.removeItem("authTokens");
     // navigate("/login");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        class: "navbar ",
+        class: "navbar1 ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 class: "nav-logo border",
@@ -27363,17 +27366,17 @@ const Navbar = ({ setQuery })=>{
                         name: "top"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 26,
+                        lineNumber: 28,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Navbar.js",
-                    lineNumber: 25,
+                    lineNumber: 27,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 24,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27384,14 +27387,14 @@ const Navbar = ({ setQuery })=>{
                         children: "Deliver to"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 31,
+                        lineNumber: 33,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                         class: "fa-solid fa-location-dot"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 32,
+                        lineNumber: 34,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27399,13 +27402,13 @@ const Navbar = ({ setQuery })=>{
                         children: "India"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 33,
+                        lineNumber: 35,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 30,
+                lineNumber: 32,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27416,12 +27419,12 @@ const Navbar = ({ setQuery })=>{
                             children: "All "
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Navbar.js",
-                            lineNumber: 38,
+                            lineNumber: 40,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 37,
+                        lineNumber: 39,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27433,7 +27436,7 @@ const Navbar = ({ setQuery })=>{
                         }
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 40,
+                        lineNumber: 42,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27443,23 +27446,23 @@ const Navbar = ({ setQuery })=>{
                                 class: "fa-solid fa-magnifying-glass"
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/Navbar.js",
-                                lineNumber: 44,
+                                lineNumber: 46,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Navbar.js",
-                            lineNumber: 43,
+                            lineNumber: 45,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 36,
+                lineNumber: 38,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27471,12 +27474,12 @@ const Navbar = ({ setQuery })=>{
                         children: " Hello,Sign Up "
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 53,
+                        lineNumber: 55,
                         columnNumber: 25
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Navbar.js",
-                    lineNumber: 52,
+                    lineNumber: 54,
                     columnNumber: 21
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     class: "signin border",
@@ -27487,17 +27490,17 @@ const Navbar = ({ setQuery })=>{
                         children: " Log out "
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 57,
+                        lineNumber: 59,
                         columnNumber: 25
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Navbar.js",
-                    lineNumber: 56,
+                    lineNumber: 58,
                     columnNumber: 21
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 49,
+                lineNumber: 51,
                 columnNumber: 13
             }, undefined),
             localStorage.getItem("authTokens") ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27508,7 +27511,7 @@ const Navbar = ({ setQuery })=>{
                         children: "Returns"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27516,40 +27519,55 @@ const Navbar = ({ setQuery })=>{
                         children: "& orders"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 65,
+                        lineNumber: 67,
                         columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 63,
+                lineNumber: 65,
                 columnNumber: 17
             }, undefined) : "",
             localStorage.getItem("authTokens") ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 class: "cart border",
+                onClick: ()=>{
+                    setCartView(true);
+                },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                         class: "fa-solid fa-cart-shopping"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 71,
+                        lineNumber: 73,
                         columnNumber: 21
                     }, undefined),
                     "My Cart"
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 70,
+                lineNumber: 72,
                 columnNumber: 17
+            }, undefined) : "",
+            cartView ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDefault.default), {
+                onClose: ()=>setCartView(false),
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
+                    fileName: "src/pages/homepage/Navbar.js",
+                    lineNumber: 77,
+                    columnNumber: 63
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/homepage/Navbar.js",
+                lineNumber: 77,
+                columnNumber: 21
             }, undefined) : ""
         ]
     }, void 0, true, {
         fileName: "src/pages/homepage/Navbar.js",
-        lineNumber: 23,
+        lineNumber: 25,
         columnNumber: 9
     }, undefined);
 };
-_s(Navbar, "A+85pC+/CorZEnQzgoS6VfshN08=", false, function() {
+_s(Navbar, "rhwZ+56bMTCb4E/r9wtx/BDWdjs=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -27564,7 +27582,7 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Carousel":"8Ro6d","react-router-dom":"9xmpe"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe","./Modal":"hYsZD","./Cart":"cifdz"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27732,183 +27750,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"8Ro6d":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a099 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a099.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _card = require("./card");
-var _cardDefault = parcelHelpers.interopDefault(_card);
-var _react = require("react");
-var _s = $RefreshSig$();
-const Carousel = ({ query })=>{
-    _s();
-    const [data, setData] = (0, _react.useState)([]);
-    const getData = async ()=>{
-        if (query.length > 0 && query != undefined) {
-            const shorturl = await fetch(`http://localhost:1400/products?title=${query}`, {
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            }).then((res)=>res.json()).then((r)=>{
-                setData(r.data.product);
-            }).catch((err)=>console.log(err));
-        //     console.log(data);
-        } else {
-            const shorturl = await fetch("http://localhost:1400/products", {
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            }).then((res)=>res.json()).then((r)=>{
-                setData(r.data.product);
-            }).catch((err)=>console.log(err));
-        // console.log(data);
-        }
-    };
-    (0, _react.useEffect)(()=>{
-        getData();
-    }, [
-        query
-    ]);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hero-image",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "hero-words",
-                    children: "You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/Carousel.js",
-                    lineNumber: 44,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/pages/homepage/Carousel.js",
-                lineNumber: 43,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "content",
-                children: data.map((elem)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardDefault.default), {
-                            elem: elem
-                        }, void 0, false, {
-                            fileName: "src/pages/homepage/Carousel.js",
-                            lineNumber: 54,
-                            columnNumber: 29
-                        }, undefined)
-                    }, elem.id, false, {
-                        fileName: "src/pages/homepage/Carousel.js",
-                        lineNumber: 53,
-                        columnNumber: 25
-                    }, undefined);
-                })
-            }, void 0, false, {
-                fileName: "src/pages/homepage/Carousel.js",
-                lineNumber: 50,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/homepage/Carousel.js",
-        lineNumber: 42,
-        columnNumber: 9
-    }, undefined);
-};
-_s(Carousel, "IEMTtLVFIuToo7X/raQbJAxzNQU=");
-_c = Carousel;
-exports.default = Carousel;
-var _c;
-$RefreshReg$(_c, "Carousel");
-
-  $parcel$ReactRefreshHelpers$a099.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./card":"iXUvL","react":"21dqq"}],"iXUvL":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c3bd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c3bd.prelude(module);
-
-try {
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Card = ({ elem })=>{
-    // console.log(1)
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                className: "card-title",
-                children: elem.title
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "card-img",
-                src: elem?.images[1],
-                alt: ""
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "card-button",
-                children: "Add to cart"
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 8,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "card-info",
-                children: [
-                    "Rs ",
-                    elem.price
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 9,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "card-desc",
-                children: elem.description
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 10,
-                columnNumber: 17
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/homepage/card.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Card;
-module.exports = Card;
-var _c;
-$RefreshReg$(_c, "Card");
-
-  $parcel$ReactRefreshHelpers$c3bd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -34601,7 +34443,405 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lENFd":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hYsZD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$26c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$26c7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Modal);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactDom = require("react-dom");
+var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+const MODAL_STYLES = {
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    backgroundColor: "rgb(34,34,34)",
+    transform: "translate(-50%, -50%)",
+    zIndex: 1000,
+    height: "90%",
+    width: "90%"
+};
+const OVERLAY_STYLES = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0, 0, 0, .7)",
+    zIndex: 1000
+};
+function Modal({ children, onClose }) {
+    return /*#__PURE__*/ (0, _reactDomDefault.default).createPortal(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: OVERLAY_STYLES
+            }, void 0, false, {
+                fileName: "src/pages/homepage/Modal.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: MODAL_STYLES,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "btn bg-danger fs-4",
+                        style: {
+                            marginLeft: "90%",
+                            marginTop: "-35px"
+                        },
+                        onClick: onClose,
+                        children: " X "
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/Modal.js",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    children
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/Modal.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true), document.getElementById("cart-root"));
+}
+_c = Modal;
+var _c;
+$RefreshReg$(_c, "Modal");
+
+  $parcel$ReactRefreshHelpers$26c7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cifdz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6955 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6955.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Cart);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function Cart() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                    className: "table table-hover ",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                            className: " text-success fs-4",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "#"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homepage/Cart.js",
+                                        lineNumber: 18,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Name"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homepage/Cart.js",
+                                        lineNumber: 19,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Quantity"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homepage/Cart.js",
+                                        lineNumber: 20,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Option"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homepage/Cart.js",
+                                        lineNumber: 21,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col",
+                                        children: "Amount"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homepage/Cart.js",
+                                        lineNumber: 22,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        scope: "col"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homepage/Cart.js",
+                                        lineNumber: 23,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homepage/Cart.js",
+                                lineNumber: 17,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/homepage/Cart.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {}, void 0, false, {
+                            fileName: "src/pages/homepage/Cart.js",
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/homepage/Cart.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "fs-2",
+                        children: "Total Price: /-"
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/Cart.js",
+                        lineNumber: 30,
+                        columnNumber: 14
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/Cart.js",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "btn bg-success mt-5 ",
+                        children: " Check Out "
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/Cart.js",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/Cart.js",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/homepage/Cart.js",
+            lineNumber: 14,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/pages/homepage/Cart.js",
+        lineNumber: 11,
+        columnNumber: 5
+    }, this);
+}
+_c = Cart;
+var _c;
+$RefreshReg$(_c, "Cart");
+
+  $parcel$ReactRefreshHelpers$6955.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"8Ro6d":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a099 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a099.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _card = require("./card");
+var _cardDefault = parcelHelpers.interopDefault(_card);
+var _react = require("react");
+var _s = $RefreshSig$();
+const Carousel = ({ query })=>{
+    _s();
+    const [data, setData] = (0, _react.useState)([]);
+    const getData = async ()=>{
+        if (query.length > 0 && query != undefined) {
+            const shorturl = await fetch(`http://localhost:1400/products?title=${query}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((res)=>res.json()).then((r)=>{
+                setData(r.data.product);
+            }).catch((err)=>console.log(err));
+        //     console.log(data);
+        } else {
+            const shorturl = await fetch("http://localhost:1400/products", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((res)=>res.json()).then((r)=>{
+                setData(r.data.product);
+            }).catch((err)=>console.log(err));
+        // console.log(data);
+        }
+    };
+    (0, _react.useEffect)(()=>{
+        getData();
+    }, [
+        query
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "hero-image",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "hero-words",
+                    children: "You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in"
+                }, void 0, false, {
+                    fileName: "src/pages/homepage/Carousel.js",
+                    lineNumber: 44,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/homepage/Carousel.js",
+                lineNumber: 43,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "content",
+                children: data.map((elem)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardDefault.default), {
+                            elem: elem
+                        }, void 0, false, {
+                            fileName: "src/pages/homepage/Carousel.js",
+                            lineNumber: 54,
+                            columnNumber: 29
+                        }, undefined)
+                    }, elem.id, false, {
+                        fileName: "src/pages/homepage/Carousel.js",
+                        lineNumber: 53,
+                        columnNumber: 25
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/pages/homepage/Carousel.js",
+                lineNumber: 50,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/homepage/Carousel.js",
+        lineNumber: 42,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Carousel, "IEMTtLVFIuToo7X/raQbJAxzNQU=");
+_c = Carousel;
+exports.default = Carousel;
+var _c;
+$RefreshReg$(_c, "Carousel");
+
+  $parcel$ReactRefreshHelpers$a099.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./card":"iXUvL","react":"21dqq"}],"iXUvL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c3bd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c3bd.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Card = ({ elem })=>{
+    // console.log(1)
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "card-title",
+                children: elem.title
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "card-img",
+                src: elem?.images[1],
+                alt: ""
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "cardButton ",
+                children: "Add to Cart"
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 8,
+                columnNumber: 17
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "card-info",
+                children: [
+                    "Rs ",
+                    elem.price
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 9,
+                columnNumber: 17
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "card-desc",
+                children: elem.description
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 10,
+                columnNumber: 17
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/homepage/card.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Card;
+module.exports = Card;
+var _c;
+$RefreshReg$(_c, "Card");
+
+  $parcel$ReactRefreshHelpers$c3bd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lENFd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$731c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
