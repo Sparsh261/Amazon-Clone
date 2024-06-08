@@ -3,7 +3,7 @@ const Footer = () => {
 
         <div class="footer">
             <div class="to-top">
-            <a href="#top">Back to top</a>
+                <a href="#top">Back to top</a>
             </div>
             <div class="panel1">
                 <div class="panel11">

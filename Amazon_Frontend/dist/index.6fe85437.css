@@ -133,6 +133,7 @@ body {
   padding-right: 20rem;
   font-size: 1.1rem;
   display: flex;
+  overflow: auto;
 }
 
 .content {
@@ -208,6 +209,7 @@ body {
 
 .panel1 {
   background-color: gray;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   height: 300px;
@@ -284,5 +286,11 @@ body {
 a {
   color: #f0f8ff;
   text-decoration: none;
+}
+
+@media screen and (width <= 800px) {
+  .nav-search-bar {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=index.6fe85437.css.map */

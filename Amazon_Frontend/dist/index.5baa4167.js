@@ -34940,7 +34940,7 @@ const Footer = ()=>{
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Footer.js",
                     lineNumber: 6,
-                    columnNumber: 13
+                    columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Footer.js",
