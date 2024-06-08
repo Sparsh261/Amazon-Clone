@@ -12,4 +12,14 @@ usersRouter.route('/signup')
 usersRouter.route('/login')
 .post(usersController.verifyUsers)
 
+usersRouter.route('/addToCart')
+.post(usersController.addToCart)
+
+
+usersRouter.route('/getCartItems')
+.post(usersController.getCartItems)
+
+usersRouter.route('/deleteCartItems')
+.delete(usersController.deleteCartItems)
+
 module.exports = usersRouter

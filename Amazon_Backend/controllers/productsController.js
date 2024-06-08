@@ -6,9 +6,13 @@ const getAllProducts = async (req, res) => {
         // console.log(q.title)
         let query = productModel.find();
         let title = q.title;
+        let _id = q._id;
         if (title) {
             //  query = productModel.find(q);
             query = productModel.find({ title: { "$regex": q.title } });
+        }
+        if(_id){
+            query = productModel.find({ _id: _id });
         }
 
         query = query.sort(sort.split(',').join(' '));

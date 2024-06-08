@@ -9,7 +9,7 @@ const Carousel = ({ query }) => {
     const getData = async () => {
         
         if (query.length> 0 && query != undefined) {
-            const shorturl = await fetch(`http://localhost:1400/products?title=${query}`, {
+            const res = await fetch(`http://localhost:1400/products?title=${query}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
@@ -22,7 +22,7 @@ const Carousel = ({ query }) => {
         //     console.log(data);
         }
         else {
-            const shorturl = await fetch('http://localhost:1400/products', {
+            const res = await fetch('http://localhost:1400/products', {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
@@ -48,9 +48,10 @@ const Carousel = ({ query }) => {
             </div>
 
             <div className="content">
+                
                 {data.map(elem => {
                     return (
-                        <div key={elem.id}>
+                        <div key={elem._id}>
                             <Card elem={elem} />
                         </div>
                     )

@@ -14,7 +14,11 @@ const usersSchema = mongoose.Schema({
         type:String,
         required:true,
         unique:true
-    }
+    },
+    authToken:{
+        type:String,
+    },
+    cartItems : [String]
 })
 
 const usersModel = mongoose.model("users",usersSchema);
