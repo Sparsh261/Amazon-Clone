@@ -3,12 +3,10 @@ const productModel = require('../models/productsModel.js');
 const getAllProducts = async (req, res) => {
     const { sort = 'price', page = 1, pageSize = 100, fields = "-info", ...q } = req.query;
     try {
-        // console.log(q.title)
         let query = productModel.find();
         let title = q.title;
         let _id = q._id;
         if (title) {
-            //  query = productModel.find(q);
             query = productModel.find({ title: { "$regex": q.title } });
         }
         if(_id){
@@ -67,7 +65,6 @@ const addProducts = async (req, res) => {
         res.status(403);
         res.json({
             status: "fail",
-            // message: JSON.stringify(err)
             message: err.message
         })
     }

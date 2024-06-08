@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const app = require('./app.js')
-const addDataToServer = require('./dataBackup/addDataToServer.js')
+
 
 const url = 'mongodb+srv://_USERNAME_:_PASSWORD_@cluster0.3pqyhsm.mongodb.net/_DATABASENAME_?retryWrites=true&w=majority&appName=Cluster0'
 const dataBaseUser = 'SparshChauhan'
@@ -14,7 +14,6 @@ dbLink =  dbLink.replace("_DATABASENAME_",dataBaseName)
 
 mongoose.connect(dbLink)
 .then(()=>{
-    // addDataToServer()     // It shout run only for first time otherwisae it will add data to server continuously
     console.log("DataBase COnnected")
 }).catch((err)=>console.log(err))
 

@@ -33,7 +33,6 @@ const addUsers = async (req, res) => {
         })
     }
     catch (err) {
-        // console.log(err)
         res.json({
             status: err,
             msg: "Email Exists"
@@ -130,7 +129,6 @@ const getCartItems = async (req, res) => {
                     .catch(err => console.log(err))
             });
             setTimeout(() => {
-                // console.log(items)
                 res.json({
                     status: "true",
                     cartItems: items
@@ -146,19 +144,18 @@ const getCartItems = async (req, res) => {
 }
 
 const deleteCartItems = async (req, res) => {
-    const { authToken , id} = req.body;
+    const { authToken, id } = req.body;
     const user = await usersModel.findOne({ authToken });
 
     try {
-        // console.log(user.cartItems)
-        // console.log(id)
+
         const index = user.cartItems.indexOf(id)
-        await user.cartItems.splice(index,1)
-            await usersModel.findOneAndUpdate({ authToken }, user)
-            res.json({
-                status: "success"
-            })
-        
+        await user.cartItems.splice(index, 1)
+        await usersModel.findOneAndUpdate({ authToken }, user)
+        res.json({
+            status: "success"
+        })
+
     }
     catch (err) {
         res.json({

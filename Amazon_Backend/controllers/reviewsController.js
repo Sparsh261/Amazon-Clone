@@ -24,7 +24,7 @@ const addReviews = async (req, res) => {
 
     const { _id, ...reqBody } = req.body
     try {
-        if ((await reviewsModel.findOne({ productId: reqBody.productId , userId: reqBody.userId})) != null) {
+        if ((await reviewsModel.findOne({ productId: reqBody.productId, userId: reqBody.userId })) != null) {
             res.json({
                 message: "Userid for product exist"
             })
@@ -37,7 +37,7 @@ const addReviews = async (req, res) => {
 
             const userToUpdate = await productModel.findOne({ _id: reqBody.productId })
             userToUpdate.review.push(objId)
-            const updatedData = await productModel.updateOne({ _id: reqBody.productId },userToUpdate)
+            const updatedData = await productModel.updateOne({ _id: reqBody.productId }, userToUpdate)
             res.send({
                 status: "success",
                 reviews: data,
