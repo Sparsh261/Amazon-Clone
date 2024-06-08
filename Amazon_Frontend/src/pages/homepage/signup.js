@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useState } from "react-dom";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
@@ -33,18 +32,43 @@ const SignUp = () => {
     } 
 
     return (
-        <div id="signup" className="container">
-            <form onSubmit={userAdd}>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" required onChange={(e)=>{setUserName(e.target.value)}}/><br></br>
-                <label htmlFor="email">Email</label>
-                <input type="text" id="email" name="email"  onChange={(e)=>{setUserEmail(e.target.value)}} required /><br></br>
-                <label htmlFor="password">Password:</label>
-                <input type="password" id="password" name="password"  onChange={(e)=>{setUserPassword(e.target.value)}} required /><br></br>
-                <button>Submit</button>
-                <Link to="/login"><button>Already a user</button></Link>
+
+        <>
+        
+        <div className="container  w-75 mt-5">
+            <form  onSubmit={userAdd}>
+            <div className="form-group mt-5">
+                    <label for="exampleInputEmail1" className="mt-5 fs-2">Name</label>
+                    <input type="text" className="form-control" id="exampleInputEmail1 name
+                        email" name="name" onChange={(e) => { setUserName(e.target.value) }}
+                        aria-describedby="emailHelp" placeholder="Enter name"/>
+                </div>
+                <div className="form-group ">
+                    <label for="exampleInputEmail1" className="mt-5 fs-2">Email address</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1
+                        email" name="email" onChange={(e) => { setUserEmail(e.target.value) }}
+                        aria-describedby="emailHelp" placeholder="Enter email"/>
+                        <small id="emailHelp" className="form-text text-muted bg-light ">We'll never share your email with anyone else.</small>
+                </div>
+                <div className="form-group">
+                    <label for="exampleInputPassword1" className="mt-3 fs-2">Password</label>
+                    <input type="password" className="form-control" id="exampleInputPassword1 password" 
+                        name="password" onChange={(e) => { setUserPassword(e.target.value) }}
+                        placeholder="Password"/>
+                </div>
+               
+                <button type="submit" className="btn btn-primary mt-5">Submit</button>
+                <Link to="/login"><button className="btn btn-danger mt-5 ms-5">Already a user</button></Link>
             </form>
-        </div>
+            </div>
+
+        
+        
+        
+        
+        
+        
+        </>
     )
 }
 

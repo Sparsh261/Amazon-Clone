@@ -2970,7 +2970,7 @@ const App = ()=>{
             path: "/",
             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 20,
+                lineNumber: 18,
                 columnNumber: 20
             }, undefined)
         },
@@ -2978,7 +2978,7 @@ const App = ()=>{
             path: "/signup",
             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 24,
+                lineNumber: 22,
                 columnNumber: 22
             }, undefined)
         },
@@ -2986,7 +2986,7 @@ const App = ()=>{
             path: "/login",
             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 28,
+                lineNumber: 26,
                 columnNumber: 22
             }, undefined)
         }
@@ -2996,19 +2996,19 @@ const App = ()=>{
             router: router
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 35,
+            lineNumber: 32,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 33,
+        lineNumber: 31,
         columnNumber: 9
     }, undefined);
 };
 _c = App;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 41,
+    lineNumber: 38,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -27276,7 +27276,6 @@ var _navbar = require("./Navbar");
 var _navbarDefault = parcelHelpers.interopDefault(_navbar);
 var _carousel = require("./Carousel");
 var _carouselDefault = parcelHelpers.interopDefault(_carousel);
-// import Categoryrow from './categoryRow'
 var _footer = require("./Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _react = require("react");
@@ -27290,25 +27289,25 @@ const Homepage = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "src/pages/homepage/homepage.js",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
                 query: query
             }, void 0, false, {
                 fileName: "src/pages/homepage/homepage.js",
-                lineNumber: 16,
+                lineNumber: 14,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/pages/homepage/homepage.js",
-                lineNumber: 17,
+                lineNumber: 15,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/homepage/homepage.js",
-        lineNumber: 13,
+        lineNumber: 12,
         columnNumber: 8
     }, undefined);
 };
@@ -27485,21 +27484,6 @@ const Navbar = ({ setQuery })=>{
                 columnNumber: 13
             }, undefined),
             localStorage.getItem("authTokens") ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "signin border1",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    class: "line2",
-                    children: "Orders"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/Navbar.js",
-                    lineNumber: 67,
-                    columnNumber: 21
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 65,
-                columnNumber: 17
-            }, undefined) : "",
-            localStorage.getItem("authTokens") ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 class: "cart border1",
                 onClick: ()=>{
                     setCartView(true);
@@ -27509,26 +27493,26 @@ const Navbar = ({ setQuery })=>{
                         class: "fa-solid fa-cart-shopping"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",
-                        lineNumber: 73,
+                        lineNumber: 66,
                         columnNumber: 21
                     }, undefined),
                     "My Cart"
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 72,
+                lineNumber: 65,
                 columnNumber: 17
             }, undefined) : "",
             cartView ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDefault.default), {
                 onClose: ()=>setCartView(false),
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
                     fileName: "src/pages/homepage/Navbar.js",
-                    lineNumber: 77,
+                    lineNumber: 70,
                     columnNumber: 63
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Navbar.js",
-                lineNumber: 77,
+                lineNumber: 70,
                 columnNumber: 21
             }, undefined) : ""
         ]
@@ -34506,8 +34490,6 @@ parcelHelpers.export(exports, "default", ()=>Cart);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _card = require("./card");
-var _cardDefault = parcelHelpers.interopDefault(_card);
 var _s = $RefreshSig$();
 function Cart() {
     _s();
@@ -34539,7 +34521,7 @@ function Cart() {
                         children: i
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 35,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34547,7 +34529,7 @@ function Cart() {
                         children: item.title
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 36,
+                        lineNumber: 35,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34555,7 +34537,7 @@ function Cart() {
                         children: item.stock
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 37,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34563,7 +34545,7 @@ function Cart() {
                         children: item.price
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 39,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34576,18 +34558,18 @@ function Cart() {
                             children: " Delete "
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Cart.js",
-                            lineNumber: 40,
+                            lineNumber: 38,
                             columnNumber: 28
                         }, this)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 40,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Cart.js",
-                lineNumber: 34,
+                lineNumber: 33,
                 columnNumber: 9
             }, this);
         });
@@ -34630,7 +34612,7 @@ function Cart() {
                                         children: "#"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 79,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34638,7 +34620,7 @@ function Cart() {
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 80,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34646,7 +34628,7 @@ function Cart() {
                                         children: "Available Quantity"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 81,
+                                        lineNumber: 79,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34654,25 +34636,25 @@ function Cart() {
                                         children: "Amount"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 82,
+                                        lineNumber: 80,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                         scope: "col"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 83,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/homepage/Cart.js",
-                                lineNumber: 78,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Cart.js",
-                            lineNumber: 77,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -34683,18 +34665,18 @@ function Cart() {
                                 children: "........fetching Data........"
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/Cart.js",
-                                lineNumber: 88,
-                                columnNumber: 33
+                                lineNumber: 86,
+                                columnNumber: 37
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Cart.js",
-                            lineNumber: 86,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/homepage/Cart.js",
-                    lineNumber: 76,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34706,28 +34688,23 @@ function Cart() {
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 92,
+                        lineNumber: 90,
                         columnNumber: 14
                     }, this)
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Cart.js",
-                    lineNumber: 92,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                    fileName: "src/pages/homepage/Cart.js",
-                    lineNumber: 93,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/homepage/Cart.js",
-            lineNumber: 75,
+            lineNumber: 73,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/pages/homepage/Cart.js",
-        lineNumber: 74,
+        lineNumber: 72,
         columnNumber: 5
     }, this);
 }
@@ -34741,100 +34718,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./card":"iXUvL"}],"iXUvL":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c3bd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c3bd.prelude(module);
-
-try {
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Card = ({ elem })=>{
-    // console.log(elem._id)
-    const handleCart = async (elemId)=>{
-        const authToken = localStorage.getItem("authTokens");
-        // console.log(userId)
-        const res = await fetch(`http://localhost:1400/users/addToCart`, {
-            method: "POST",
-            body: JSON.stringify({
-                "authToken": authToken,
-                "elemId": elemId
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        const data = await res.json();
-        console.log(data);
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card1",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                className: "cardtitle",
-                children: elem.title
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 29,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "cardImg",
-                src: elem?.images[1],
-                alt: ""
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 30,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "cardButton ",
-                onClick: ()=>{
-                    handleCart(elem._id);
-                },
-                children: "Add to Cart"
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 31,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "card-info",
-                children: [
-                    "Rs ",
-                    elem.price
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 32,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "card-desc",
-                children: elem.description
-            }, void 0, false, {
-                fileName: "src/pages/homepage/card.js",
-                lineNumber: 33,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/homepage/card.js",
-        lineNumber: 28,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Card;
-module.exports = Card;
-var _c;
-$RefreshReg$(_c, "Card");
-
-  $parcel$ReactRefreshHelpers$c3bd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ro6d":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"8Ro6d":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a099 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34861,7 +34745,6 @@ const Carousel = ({ query })=>{
             }).then((res)=>res.json()).then((r)=>{
                 setData(r.data.product);
             }).catch((err)=>console.log(err));
-        //     console.log(data);
         } else {
             const res = await fetch("http://localhost:1400/products", {
                 method: "GET",
@@ -34871,7 +34754,6 @@ const Carousel = ({ query })=>{
             }).then((res)=>res.json()).then((r)=>{
                 setData(r.data.product);
             }).catch((err)=>console.log(err));
-        // console.log(data);
         }
     };
     (0, _react.useEffect)(()=>{
@@ -34888,12 +34770,12 @@ const Carousel = ({ query })=>{
                     children: "You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in"
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Carousel.js",
-                    lineNumber: 44,
+                    lineNumber: 42,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Carousel.js",
-                lineNumber: 43,
+                lineNumber: 41,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34904,24 +34786,24 @@ const Carousel = ({ query })=>{
                             elem: elem
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Carousel.js",
-                            lineNumber: 55,
+                            lineNumber: 53,
                             columnNumber: 29
                         }, undefined)
                     }, elem._id, false, {
                         fileName: "src/pages/homepage/Carousel.js",
-                        lineNumber: 54,
+                        lineNumber: 52,
                         columnNumber: 25
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/pages/homepage/Carousel.js",
-                lineNumber: 50,
+                lineNumber: 48,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/homepage/Carousel.js",
-        lineNumber: 42,
+        lineNumber: 40,
         columnNumber: 9
     }, undefined);
 };
@@ -34936,7 +34818,107 @@ $RefreshReg$(_c, "Carousel");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./card":"iXUvL","react":"21dqq"}],"lENFd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./card":"iXUvL","react":"21dqq"}],"iXUvL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c3bd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c3bd.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const Card = ({ elem })=>{
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const handleCart = async (elemId)=>{
+        const authToken = localStorage.getItem("authTokens");
+        if (!authToken) navigate("/signup");
+        const res = await fetch(`http://localhost:1400/users/addToCart`, {
+            method: "POST",
+            body: JSON.stringify({
+                "authToken": authToken,
+                "elemId": elemId
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await res.json();
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card1",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "cardtitle",
+                children: elem.title
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 27,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "cardImg",
+                src: elem?.images[1],
+                alt: "Img"
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 28,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "cardButton ",
+                onClick: ()=>{
+                    handleCart(elem._id);
+                },
+                children: "Add to Cart"
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 29,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "card-info",
+                children: [
+                    "Rs ",
+                    elem.price
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "card-desc",
+                children: elem.description
+            }, void 0, false, {
+                fileName: "src/pages/homepage/card.js",
+                lineNumber: 31,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/homepage/card.js",
+        lineNumber: 26,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Card, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = Card;
+module.exports = Card;
+var _c;
+$RefreshReg$(_c, "Card");
+
+  $parcel$ReactRefreshHelpers$c3bd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"lENFd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$731c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35321,122 +35303,155 @@ const SignUp = ()=>{
         if (data.status === "success") navigate("/login");
         else alert(data.msg);
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "signup",
-        className: "container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            onSubmit: userAdd,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: "name",
-                    children: "Name:"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 38,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    id: "name",
-                    name: "name",
-                    required: true,
-                    onChange: (e)=>{
-                        setUserName(e.target.value);
-                    }
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 39,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 39,
-                    columnNumber: 114
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: "email",
-                    children: "Email"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 40,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    id: "email",
-                    name: "email",
-                    onChange: (e)=>{
-                        setUserEmail(e.target.value);
-                    },
-                    required: true
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 41,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 41,
-                    columnNumber: 119
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: "password",
-                    children: "Password:"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 42,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "password",
-                    id: "password",
-                    name: "password",
-                    onChange: (e)=>{
-                        setUserPassword(e.target.value);
-                    },
-                    required: true
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 43,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 43,
-                    columnNumber: 132
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    children: "Submit"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 44,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: "/login",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        children: "Already a user"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container  w-75 mt-5",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: userAdd,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group mt-5",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                for: "exampleInputEmail1",
+                                className: "mt-5 fs-2",
+                                children: "Name"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 41,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                className: "form-control",
+                                id: "exampleInputEmail1 name   email",
+                                name: "name",
+                                onChange: (e)=>{
+                                    setUserName(e.target.value);
+                                },
+                                "aria-describedby": "emailHelp",
+                                placeholder: "Enter name"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 42,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/signup.js",
+                        lineNumber: 40,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group ",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                for: "exampleInputEmail1",
+                                className: "mt-5 fs-2",
+                                children: "Email address"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 47,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "email",
+                                className: "form-control",
+                                id: "exampleInputEmail1   email",
+                                name: "email",
+                                onChange: (e)=>{
+                                    setUserEmail(e.target.value);
+                                },
+                                "aria-describedby": "emailHelp",
+                                placeholder: "Enter email"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 48,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+                                id: "emailHelp",
+                                className: "form-text text-muted bg-light ",
+                                children: "We'll never share your email with anyone else."
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 51,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/signup.js",
+                        lineNumber: 46,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                for: "exampleInputPassword1",
+                                className: "mt-3 fs-2",
+                                children: "Password"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 54,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "password",
+                                className: "form-control",
+                                id: "exampleInputPassword1 password",
+                                name: "password",
+                                onChange: (e)=>{
+                                    setUserPassword(e.target.value);
+                                },
+                                placeholder: "Password"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/signup.js",
+                                lineNumber: 55,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/signup.js",
+                        lineNumber: 53,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        className: "btn btn-primary mt-5",
+                        children: "Submit"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/signup.js",
-                        lineNumber: 45,
-                        columnNumber: 35
+                        lineNumber: 60,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/login",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "btn btn-danger mt-5 ms-5",
+                            children: "Already a user"
+                        }, void 0, false, {
+                            fileName: "src/pages/homepage/signup.js",
+                            lineNumber: 61,
+                            columnNumber: 35
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/pages/homepage/signup.js",
+                        lineNumber: 61,
+                        columnNumber: 17
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/signup.js",
-                    lineNumber: 45,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/signup.js",
+                lineNumber: 39,
+                columnNumber: 13
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/pages/homepage/signup.js",
-            lineNumber: 37,
-            columnNumber: 13
+            lineNumber: 38,
+            columnNumber: 9
         }, undefined)
-    }, void 0, false, {
-        fileName: "src/pages/homepage/signup.js",
-        lineNumber: 36,
-        columnNumber: 9
-    }, undefined);
+    }, void 0, false);
 };
 _s(SignUp, "RyKG4cA70K72sXKGr2ma9nlnvuc=", false, function() {
     return [
@@ -35471,7 +35486,7 @@ const Login = ()=>{
     const navigate = (0, _reactRouterDom.useNavigate)();
     const [userEmail, setUserEmail] = (0, _react.useState)();
     const [userPassword, setUserPassword] = (0, _react.useState)();
-    const userAdd = async (e)=>{
+    const userlogin = async (e)=>{
         e.preventDefault();
         const res = await fetch(`http://localhost:1400/users/login`, {
             method: "POST",
@@ -35484,102 +35499,112 @@ const Login = ()=>{
             }
         });
         const data = await res.json();
-        // console.log(data)
         if (data.status === "true") {
             localStorage.setItem("authTokens", data.authToken);
             navigate("/");
         } else alert(data.msg);
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "signup",
-        className: "container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            onSubmit: userAdd,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: "email",
-                    children: "Email:"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 42,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    id: "email",
-                    name: "email",
-                    onChange: (e)=>{
-                        setUserEmail(e.target.value);
-                    },
-                    required: true
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 43,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 43,
-                    columnNumber: 122
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    htmlFor: "password",
-                    children: "Password:"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 44,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "password",
-                    id: "password",
-                    name: "password",
-                    onChange: (e)=>{
-                        setUserPassword(e.target.value);
-                    },
-                    required: true
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 45,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 45,
-                    columnNumber: 135
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    children: "Submit"
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 46,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: "/login",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        children: "Already a user"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container  w-75 mt-5",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: userlogin,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group mt-5",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                for: "exampleInputEmail1",
+                                className: "mt-5 fs-2",
+                                children: "Email address"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/login.js",
+                                lineNumber: 46,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "email",
+                                className: "form-control",
+                                id: "exampleInputEmail1   email",
+                                name: "email",
+                                onChange: (e)=>{
+                                    setUserEmail(e.target.value);
+                                },
+                                "aria-describedby": "emailHelp",
+                                placeholder: "Enter email"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/login.js",
+                                lineNumber: 47,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+                                id: "emailHelp",
+                                className: "form-text text-muted bg-light ",
+                                children: "We'll never share your email with anyone else."
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/login.js",
+                                lineNumber: 50,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/login.js",
+                        lineNumber: 45,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "form-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                for: "exampleInputPassword1",
+                                className: "mt-3 fs-2",
+                                children: "Password"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/login.js",
+                                lineNumber: 53,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "password",
+                                className: "form-control",
+                                id: "exampleInputPassword1 password",
+                                name: "password",
+                                onChange: (e)=>{
+                                    setUserPassword(e.target.value);
+                                },
+                                placeholder: "Password"
+                            }, void 0, false, {
+                                fileName: "src/pages/homepage/login.js",
+                                lineNumber: 54,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homepage/login.js",
+                        lineNumber: 52,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        className: "btn btn-primary mt-5",
+                        children: "Submit"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/login.js",
-                        lineNumber: 47,
-                        columnNumber: 35
+                        lineNumber: 59,
+                        columnNumber: 17
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "src/pages/homepage/login.js",
-                    lineNumber: 47,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homepage/login.js",
+                lineNumber: 44,
+                columnNumber: 13
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/pages/homepage/login.js",
-            lineNumber: 41,
+            lineNumber: 43,
             columnNumber: 13
         }, undefined)
-    }, void 0, false, {
-        fileName: "src/pages/homepage/login.js",
-        lineNumber: 40,
-        columnNumber: 9
-    }, undefined);
+    }, void 0, false);
 };
 _s(Login, "nezD79EcunQ5DbbHsLv9xvw+tPc=", false, function() {
     return [

@@ -62,13 +62,6 @@ const Navbar = ({ setQuery }) => {
             </div>
 
             {localStorage.getItem("authTokens") ?
-                <div class="signin border1">
-                    {/* <p class="line1">Returns</p> */}
-                    <p class="line2">Orders</p>
-                </div> : ""
-            }
-
-            {localStorage.getItem("authTokens") ?
                 <div class="cart border1" onClick={()=>{setCartView(true)}}>
                     <i class="fa-solid fa-cart-shopping"></i>
                     My Cart

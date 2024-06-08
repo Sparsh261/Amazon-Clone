@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Card from './card';
 
 export default function Cart() {
 
@@ -35,9 +34,8 @@ export default function Cart() {
           <th scope='col' >{i}</th>
           <th scope='col' >{item.title}</th>
           <th scope='col' >{item.stock}</th>
-          {/* <th scope='col' >Option</th> */}
           <th scope='col' >{item.price}</th>
-          <th scope='col' ><button className='btn small bg-danger mt-2 ' onClick={(e)=>{deleteCartItems(item._id)}}> Delete </button></th>
+          <th scope='col' ><button className='btn small bg-danger mt-2 ' onClick={(e) => { deleteCartItems(item._id) }}> Delete </button></th>
         </tr>
       )
     })
@@ -51,13 +49,13 @@ export default function Cart() {
 
   useEffect(getCartItemsHandler, [])
 
-  const deleteCartItems = async(id) => {
+  const deleteCartItems = async (id) => {
     const authToken = localStorage.getItem("authTokens");
     const res = await fetch(`http://localhost:1400/users/deleteCartItems`, {
       method: 'DELETE',
       body: JSON.stringify({
         authToken: authToken,
-        id:id
+        id: id
       }),
       headers: {
         "Content-Type": "application/json"
@@ -85,18 +83,12 @@ export default function Cart() {
           </thead>
           <tbody>
             {
-              cartList?cartList:<h2 style={{textAlign:"center"}}>........fetching Data........</h2>
+              cartList ? cartList : <h2 style={{ textAlign: "center" }}>........fetching Data........</h2>
             }
           </tbody>
         </table>
         <div><h1 className='fs-2'>Total Price: Rs {price}</h1></div>
-        <div>
-          {/* <button className='btn bg-danger mt-5 ' onClick={deleteCartItems}> Delete all </button> */}
-        </div>
       </div>
-
-
-
     </div>
   )
 }

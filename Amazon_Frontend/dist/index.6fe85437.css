@@ -6,6 +6,10 @@
   font-family: poppins;
 }
 
+body {
+  background-color: #514e4e;
+}
+
 .navbar1 {
   background-color: #000;
   justify-content: space-evenly;
@@ -140,24 +144,26 @@
 
 .card1 {
   color: #000;
-  background-color: #40e0d0;
+  background-color: silver;
   border-radius: 8%;
   max-width: 300px;
   max-height: fit-content;
   margin: 1em;
   padding: 1em;
+  transition: all .3s;
   overflow: hidden;
 }
 
 .card1:hover {
+  background-color: #dc143c;
   scale: 1.1;
 }
 
 .cardImg {
   border-radius: 10px;
-  max-width: 280px;
-  max-height: 300px;
-  margin-left: .5em;
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: 30px;
 }
 
 .cardtitle {
@@ -170,7 +176,7 @@
   color: #000;
   border-radius: 10px;
   margin: .4em;
-  padding: .2em;
+  padding: .3em;
   font-size: 1em;
 }
 
@@ -181,6 +187,7 @@
   border-radius: .2em;
   margin-top: .4em;
   margin-left: 5em;
+  padding: .3em;
   font-size: 1.3em;
   display: inline-block;
 }
@@ -272,5 +279,10 @@
   color: #000;
   border-radius: 10px;
   font-size: 1.3em;
+}
+
+a {
+  color: #f0f8ff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.6fe85437.css.map */

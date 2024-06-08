@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 const Carousel = ({ query }) => {
 
     const [data, setData] = useState([]);
-   
+
     const getData = async () => {
-        
-        if (query.length> 0 && query != undefined) {
+
+        if (query.length > 0 && query != undefined) {
             const res = await fetch(`http://localhost:1400/products?title=${query}`, {
                 method: 'GET',
                 headers: {
@@ -19,7 +19,6 @@ const Carousel = ({ query }) => {
                     setData(r.data.product);
                 })
                 .catch((err) => console.log(err))
-        //     console.log(data);
         }
         else {
             const res = await fetch('http://localhost:1400/products', {
@@ -32,7 +31,6 @@ const Carousel = ({ query }) => {
                     setData(r.data.product);
                 })
                 .catch((err) => console.log(err))
-            // console.log(data);
         }
     }
     useEffect(() => { getData() }, [query])
@@ -48,7 +46,7 @@ const Carousel = ({ query }) => {
             </div>
 
             <div className="content">
-                
+
                 {data.map(elem => {
                     return (
                         <div key={elem._id}>
