@@ -319,6 +319,5 @@ a {
 
     .nav-search-bar {
         visibility: hidden;
-        /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
