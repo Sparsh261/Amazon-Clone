@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import PointsContext from "../context/pointsContext";
+import { useContext } from "react";
 
 export default function Cart() {
+
+  const cValue = useContext(PointsContext);
 
   const [cartList, setCartList] = useState()
   const [price, setPrice] = useState()
@@ -62,7 +66,7 @@ export default function Cart() {
       },
     })
     const data = await res.json();
-    console.log(data)
+    cValue.setUserPoints(cValue.userPoints-1);
     getCartItemsHandler();
   }
 

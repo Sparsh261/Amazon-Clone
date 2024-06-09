@@ -104,6 +104,10 @@ body {
     font-size: 1.5rem;
 }
 
+.allproducts{
+    background-color: gray;
+    height: fit-content;
+}
 
 .panel {
     background-color: grey;

@@ -2,11 +2,14 @@ import { useEffect, useState } from "react"
 import { Link , useNavigate } from "react-router-dom"
 import Modal from "./Modal";
 import Cart from "./Cart"
+import {useContext} from "react";
+import PointsContext from "../context/pointsContext";
 
 const Navbar = ({ setQuery }) => {
 
     const navigate = useNavigate();
 
+    const contextValues = useContext(PointsContext);
     let [toSearch, settoSearch] = useState('');
 
     useEffect(() => {
@@ -16,9 +19,9 @@ const Navbar = ({ setQuery }) => {
     const [cartView, setCartView] = useState(false)
 
     const handleLogout = ()=>{
-        // e.preventDefault();
+        e.preventDefault();
         localStorage.removeItem("authTokens");
-        // navigate("/login");
+        navigate("/login");
     }
 
     return (
@@ -35,10 +38,12 @@ const Navbar = ({ setQuery }) => {
                 <p class="add-two">India</p>
             </div>
 
+            <div>
+                <Link to="/allproducts">All Products</Link>
+            </div>
+
             <div class="nav-search-bar border1">
-                {/* <select>
-                    <option>All </option>
-                </select> */}
+               
                 <input type="text" placeholder="Search Amazon" value={toSearch}
                     onChange={(e) => { settoSearch(e.target.value) }} />
                 <div class="search-barlogo">
@@ -56,15 +61,15 @@ const Navbar = ({ setQuery }) => {
                     </div> 
                     :
                     <div class="signin border1">
-                        <Link to="/signup" class="line1" onClick={handleLogout}> Log out </Link>
+                        <Link to="/signup" class="line1 btn text-bg-primary" onClick={handleLogout}> Log out </Link>
                     </div>
             }
             </div>
 
             {localStorage.getItem("authTokens") ?
-                <div class="cart border1" onClick={()=>{setCartView(true)}}>
+                <div class="cart border1 btn text-bg-primary" onClick={()=>{setCartView(true)}}>
                     <i class="fa-solid fa-cart-shopping"></i>
-                    My Cart
+                    My Cart <span className='badge badge-info text-bg-danger'>{contextValues.userPoints}</span>
                 </div> : ""
             }
         {cartView ? <Modal onClose={() => setCartView(false)}><Cart></Cart></Modal> : ""}

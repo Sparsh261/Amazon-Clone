@@ -4,6 +4,7 @@ import Footer from './Footer'
 import { useState } from 'react'
 
 
+
 const Homepage = ()=>{
 
     const [query, setQuery] = useState('');

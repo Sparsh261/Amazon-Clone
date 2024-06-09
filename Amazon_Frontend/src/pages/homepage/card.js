@@ -1,7 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import PointsContext from "../context/pointsContext";
+import { useContext } from "react";
 
 
 const Card = ({ elem }) => {
+
+    const cValue = useContext(PointsContext);
     
     const navigate = useNavigate();
     
@@ -21,8 +25,8 @@ const Card = ({ elem }) => {
                 "Content-Type": "application/json"
             },
         })
-
         const data = await res.json();
+        cValue.setUserPoints(cValue.userPoints+1);
     }
 
     return (
