@@ -39,7 +39,7 @@ const Navbar = ({ setQuery }) => {
             </div>
 
             <div>
-                <Link to="/allproducts">All Products</Link>
+                <Link to="/allproducts">All Product</Link>
             </div>
 
             <div class="nav-search-bar border1">

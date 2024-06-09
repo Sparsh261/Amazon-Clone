@@ -34818,9 +34818,10 @@ var _s = $RefreshSig$();
 const Carousel = ({ query })=>{
     _s();
     const [data, setData] = (0, _react.useState)([]);
+    const url = "https://amazon-clone-9muu.onrender.com";
     const getData = async ()=>{
         if (query.length > 0 && query != undefined) {
-            const res = await fetch(`http://localhost:1400/products?title=${query}`, {
+            const res = await fetch(`${url}/products?title=${query}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -34829,7 +34830,7 @@ const Carousel = ({ query })=>{
                 setData(r.data.product);
             }).catch((err)=>console.log(err));
         } else {
-            const res = await fetch("http://localhost:1400/products", {
+            const res = await fetch(`${url}/products`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -34853,12 +34854,12 @@ const Carousel = ({ query })=>{
                     children: "You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in"
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Carousel.js",
-                    lineNumber: 42,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/homepage/Carousel.js",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34869,24 +34870,24 @@ const Carousel = ({ query })=>{
                             elem: elem
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Carousel.js",
-                            lineNumber: 53,
+                            lineNumber: 55,
                             columnNumber: 29
                         }, undefined)
                     }, elem._id, false, {
                         fileName: "src/pages/homepage/Carousel.js",
-                        lineNumber: 52,
+                        lineNumber: 54,
                         columnNumber: 25
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/pages/homepage/Carousel.js",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/homepage/Carousel.js",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 9
     }, undefined);
 };
