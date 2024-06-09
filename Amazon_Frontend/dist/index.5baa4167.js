@@ -27390,9 +27390,9 @@ const Navbar = ({ setQuery })=>{
     ]);
     const [cartView, setCartView] = (0, _react.useState)(false);
     const handleLogout = ()=>{
-        e.preventDefault();
+        // e.preventDefault();
         localStorage.removeItem("authTokens");
-        navigate("/login");
+    // navigate("/login");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         class: "navbar1 ",
@@ -27471,8 +27471,8 @@ const Navbar = ({ setQuery })=>{
                         type: "text",
                         placeholder: "Search Amazon",
                         value: toSearch,
-                        onChange: (e1)=>{
-                            settoSearch(e1.target.value);
+                        onChange: (e)=>{
+                            settoSearch(e.target.value);
                         }
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Navbar.js",

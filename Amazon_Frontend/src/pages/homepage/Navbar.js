@@ -19,9 +19,9 @@ const Navbar = ({ setQuery }) => {
     const [cartView, setCartView] = useState(false)
 
     const handleLogout = ()=>{
-        e.preventDefault();
+        // e.preventDefault();
         localStorage.removeItem("authTokens");
-        navigate("/login");
+        // navigate("/login");
     }
 
     return (
