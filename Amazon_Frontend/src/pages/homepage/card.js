@@ -7,7 +7,10 @@ const Card = ({ elem }) => {
     
     const handleCart = async (elemId) => {
         const authToken = localStorage.getItem("authTokens");
-        if(!authToken) navigate('/signup')
+        if(!authToken){ 
+            navigate('/signup');
+            alert("First Signup")
+        }
         const res = await fetch(`http://localhost:1400/users/addToCart`, {
             method: 'POST',
             body: JSON.stringify({

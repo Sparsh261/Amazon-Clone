@@ -34833,7 +34833,10 @@ const Card = ({ elem })=>{
     const navigate = (0, _reactRouterDom.useNavigate)();
     const handleCart = async (elemId)=>{
         const authToken = localStorage.getItem("authTokens");
-        if (!authToken) navigate("/signup");
+        if (!authToken) {
+            navigate("/signup");
+            alert("First Signup");
+        }
         const res = await fetch(`http://localhost:1400/users/addToCart`, {
             method: "POST",
             body: JSON.stringify({
@@ -34854,7 +34857,7 @@ const Card = ({ elem })=>{
                 children: elem.title
             }, void 0, false, {
                 fileName: "src/pages/homepage/card.js",
-                lineNumber: 27,
+                lineNumber: 30,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -34863,7 +34866,7 @@ const Card = ({ elem })=>{
                 alt: "Img"
             }, void 0, false, {
                 fileName: "src/pages/homepage/card.js",
-                lineNumber: 28,
+                lineNumber: 31,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34874,7 +34877,7 @@ const Card = ({ elem })=>{
                 children: "Add to Cart"
             }, void 0, false, {
                 fileName: "src/pages/homepage/card.js",
-                lineNumber: 29,
+                lineNumber: 32,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -34885,7 +34888,7 @@ const Card = ({ elem })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/card.js",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -34893,13 +34896,13 @@ const Card = ({ elem })=>{
                 children: elem.description
             }, void 0, false, {
                 fileName: "src/pages/homepage/card.js",
-                lineNumber: 31,
+                lineNumber: 34,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/homepage/card.js",
-        lineNumber: 26,
+        lineNumber: 29,
         columnNumber: 9
     }, undefined);
 };
@@ -35305,26 +35308,27 @@ const SignUp = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container  w-75 mt-5",
+            className: "container  w-75 mt-5 ",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                 onSubmit: userAdd,
+                className: "",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "form-group mt-5",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 for: "exampleInputEmail1",
-                                className: "mt-5 fs-2",
+                                className: "mt-5 fs-2  ",
                                 children: "Name"
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/signup.js",
                                 lineNumber: 41,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "text",
-                                className: "form-control",
-                                id: "exampleInputEmail1 name   email",
+                                className: "form-control w-75",
+                                id: "exampleInputEmail1 name   ",
                                 name: "name",
                                 onChange: (e)=>{
                                     setUserName(e.target.value);
@@ -35334,13 +35338,13 @@ const SignUp = ()=>{
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/signup.js",
                                 lineNumber: 42,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/homepage/signup.js",
                         lineNumber: 40,
-                        columnNumber: 13
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "form-group ",
@@ -35352,11 +35356,11 @@ const SignUp = ()=>{
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/signup.js",
                                 lineNumber: 47,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "email",
-                                className: "form-control",
+                                className: "form-control w-75",
                                 id: "exampleInputEmail1   email",
                                 name: "email",
                                 onChange: (e)=>{
@@ -35367,7 +35371,7 @@ const SignUp = ()=>{
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/signup.js",
                                 lineNumber: 48,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
                                 id: "emailHelp",
@@ -35382,7 +35386,7 @@ const SignUp = ()=>{
                     }, void 0, true, {
                         fileName: "src/pages/homepage/signup.js",
                         lineNumber: 46,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "form-group",
@@ -35394,11 +35398,11 @@ const SignUp = ()=>{
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/signup.js",
                                 lineNumber: 54,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "password",
-                                className: "form-control",
+                                className: "form-control w-75",
                                 id: "exampleInputPassword1 password",
                                 name: "password",
                                 onChange: (e)=>{
@@ -35408,13 +35412,13 @@ const SignUp = ()=>{
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/signup.js",
                                 lineNumber: 55,
-                                columnNumber: 21
+                                columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/homepage/signup.js",
                         lineNumber: 53,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         type: "submit",
@@ -35423,7 +35427,7 @@ const SignUp = ()=>{
                     }, void 0, false, {
                         fileName: "src/pages/homepage/signup.js",
                         lineNumber: 60,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/login",
@@ -35433,23 +35437,23 @@ const SignUp = ()=>{
                         }, void 0, false, {
                             fileName: "src/pages/homepage/signup.js",
                             lineNumber: 61,
-                            columnNumber: 35
+                            columnNumber: 39
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/signup.js",
                         lineNumber: 61,
-                        columnNumber: 17
+                        columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/signup.js",
                 lineNumber: 39,
-                columnNumber: 13
+                columnNumber: 17
             }, undefined)
         }, void 0, false, {
             fileName: "src/pages/homepage/signup.js",
             lineNumber: 38,
-            columnNumber: 9
+            columnNumber: 13
         }, undefined)
     }, void 0, false);
 };
@@ -35506,7 +35510,7 @@ const Login = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container  w-75 mt-5",
+            className: "container  w-75 mt-5 ",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                 onSubmit: userlogin,
                 children: [
@@ -35524,7 +35528,7 @@ const Login = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "email",
-                                className: "form-control",
+                                className: "form-control w-75",
                                 id: "exampleInputEmail1   email",
                                 name: "email",
                                 onChange: (e)=>{
@@ -35566,7 +35570,7 @@ const Login = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "password",
-                                className: "form-control",
+                                className: "form-control w-75",
                                 id: "exampleInputPassword1 password",
                                 name: "password",
                                 onChange: (e)=>{

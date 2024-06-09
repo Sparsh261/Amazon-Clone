@@ -40,18 +40,18 @@ const Login = () => {
 
 
 
-            <div className="container  w-75 mt-5">
-            <form  onSubmit={userlogin}>
+            <div className="container  w-75 mt-5 ">
+            <form  onSubmit={userlogin} >
                 <div className="form-group mt-5">
                     <label for="exampleInputEmail1" className="mt-5 fs-2">Email address</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1
+                    <input type="email" className="form-control w-75" id="exampleInputEmail1
                         email" name="email" onChange={(e) => { setUserEmail(e.target.value) }}
                         aria-describedby="emailHelp" placeholder="Enter email"/>
                         <small id="emailHelp" className="form-text text-muted bg-light ">We'll never share your email with anyone else.</small>
                 </div>
                 <div className="form-group">
                     <label for="exampleInputPassword1" className="mt-3 fs-2">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1 password" 
+                    <input type="password" className="form-control w-75" id="exampleInputPassword1 password" 
                         name="password" onChange={(e) => { setUserPassword(e.target.value) }}
                         placeholder="Password"/>
                 </div>
