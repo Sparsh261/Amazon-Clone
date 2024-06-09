@@ -5,6 +5,7 @@ import Cart from "./Cart"
 import {useContext} from "react";
 import PointsContext from "../context/pointsContext";
 
+
 const Navbar = ({ setQuery }) => {
 
     const navigate = useNavigate();

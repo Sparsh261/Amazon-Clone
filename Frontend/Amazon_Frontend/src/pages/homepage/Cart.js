@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PointsContext from "../context/pointsContext";
 import { useContext } from "react";
+const  url =  require('../../../URL');
 
 export default function Cart() {
 
@@ -13,7 +14,7 @@ export default function Cart() {
 
   const getCartItems = async () => {
     const authToken = localStorage.getItem("authTokens");
-    const res = await fetch(`http://localhost:1400/users/getCartItems`, {
+    const res = await fetch(`${url.default.url}/users/getCartItems`, {
       method: 'POST',
       body: JSON.stringify({
         authToken: authToken

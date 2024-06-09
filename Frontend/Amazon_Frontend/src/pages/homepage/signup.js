@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+const  url =  require('../../../URL');
 
 const SignUp = () => {
 
@@ -12,7 +13,7 @@ const SignUp = () => {
 
     const userAdd = async (e) => {
         e.preventDefault();
-        const res = await fetch(`http://localhost:1400/users/signup`, {
+        const res = await fetch(`${url.default.url}/users/signup`, {
             method: 'POST',
             body: JSON.stringify({
                 "name": e.target[0].value,

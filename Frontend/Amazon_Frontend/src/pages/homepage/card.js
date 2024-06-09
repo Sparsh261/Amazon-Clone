@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import PointsContext from "../context/pointsContext";
 import { useContext } from "react";
+const  url =  require('../../../URL');
 
 
 const Card = ({ elem }) => {
@@ -15,7 +16,7 @@ const Card = ({ elem }) => {
             navigate('/signup');
             alert("First Signup")
         }
-        const res = await fetch(`http://localhost:1400/users/addToCart`, {
+        const res = await fetch(`${url.default.url}/users/addToCart`, {
             method: 'POST',
             body: JSON.stringify({
                 "authToken": authToken,

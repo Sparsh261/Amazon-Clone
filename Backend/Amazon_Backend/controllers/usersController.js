@@ -1,8 +1,9 @@
 const usersModel = require('../models/usersModels.js');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+require('dotenv').config()
 
-const jwtSecretKey = "SecretKey";
+const jwtSecretKey = process.env.jwtSecretKey;
 
 const getAllUsers = async (req, res) => {
     const allUsers = await usersModel.find();

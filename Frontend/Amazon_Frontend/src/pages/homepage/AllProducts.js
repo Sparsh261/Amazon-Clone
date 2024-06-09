@@ -6,17 +6,16 @@ import Modal from "./Modal";
 import Cart from './Cart';
 import {useContext} from "react";
 import PointsContext from "../context/pointsContext";
+const  url =  require('../../../URL');
 
 const AllProducts = () => {
 
-    const url = 'https://amazon-clone-9muu.onrender.com';
     const navigate = useNavigate();
-
     const contextValues = useContext(PointsContext);
     const [data, setData] = useState([]);
     const [cartView, setCartView] = useState(false)
     const getData = async () => {
-        const res = await fetch(`${url}/products`, {
+        const res = await fetch(`${url.default.url}/products`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json"

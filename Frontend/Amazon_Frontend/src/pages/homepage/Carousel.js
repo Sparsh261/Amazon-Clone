@@ -1,17 +1,18 @@
 import Card from './card'
 import { useEffect, useState } from "react";
+const  url =  require('../../../URL');
 
 
 const Carousel = ({ query }) => {
 
     const [data, setData] = useState([]);
 
-    const url = 'https://amazon-clone-9muu.onrender.com';
+    
 
     const getData = async () => {
 
         if (query.length > 0 && query != undefined) {
-            const res = await fetch(`${url}/products?title=${query}`, {
+            const res = await fetch(`${url.default.url}/products?title=${query}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
@@ -23,7 +24,7 @@ const Carousel = ({ query }) => {
                 .catch((err) => console.log(err))
         }
         else {
-            const res = await fetch(`${url}/products`, {
+            const res = await fetch(`${url.default.url}/products`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
