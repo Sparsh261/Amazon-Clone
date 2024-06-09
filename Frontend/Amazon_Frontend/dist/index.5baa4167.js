@@ -35737,12 +35737,13 @@ var _pointsContextDefault = parcelHelpers.interopDefault(_pointsContext);
 var _s = $RefreshSig$();
 const AllProducts = ()=>{
     _s();
+    const url = "https://amazon-clone-9muu.onrender.com";
     const navigate = (0, _reactRouterDom.useNavigate)();
     const contextValues = (0, _react.useContext)((0, _pointsContextDefault.default));
     const [data, setData] = (0, _react.useState)([]);
     const [cartView, setCartView] = (0, _react.useState)(false);
     const getData = async ()=>{
-        const res = await fetch("http://localhost:1400/products", {
+        const res = await fetch(`${url}/products`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
