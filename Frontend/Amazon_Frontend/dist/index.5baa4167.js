@@ -34574,6 +34574,7 @@ function Cart() {
             }
         });
         const data = await res.json();
+        console.log(data);
         items = await data.cartItems;
         let i = 0;
         let itemPrice = 0;
@@ -34587,7 +34588,7 @@ function Cart() {
                         children: i
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34595,7 +34596,7 @@ function Cart() {
                         children: item.title
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34603,7 +34604,7 @@ function Cart() {
                         children: item.stock
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34611,7 +34612,7 @@ function Cart() {
                         children: item.price
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 42,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34624,18 +34625,18 @@ function Cart() {
                             children: " Delete "
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Cart.js",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 28
                         }, this)
                     }, void 0, false, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/homepage/Cart.js",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 9
             }, this);
         });
@@ -34678,7 +34679,7 @@ function Cart() {
                                         children: "#"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 82,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34686,7 +34687,7 @@ function Cart() {
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34694,7 +34695,7 @@ function Cart() {
                                         children: "Available Quantity"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 84,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -34702,25 +34703,25 @@ function Cart() {
                                         children: "Amount"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 85,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                         scope: "col"
                                     }, void 0, false, {
                                         fileName: "src/pages/homepage/Cart.js",
-                                        lineNumber: 86,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/homepage/Cart.js",
-                                lineNumber: 81,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Cart.js",
-                            lineNumber: 80,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -34731,18 +34732,18 @@ function Cart() {
                                 children: "........fetching Data........"
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/Cart.js",
-                                lineNumber: 91,
+                                lineNumber: 92,
                                 columnNumber: 37
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/homepage/Cart.js",
-                            lineNumber: 89,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/homepage/Cart.js",
-                    lineNumber: 79,
+                    lineNumber: 80,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34754,23 +34755,23 @@ function Cart() {
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/homepage/Cart.js",
-                        lineNumber: 95,
+                        lineNumber: 96,
                         columnNumber: 14
                     }, this)
                 }, void 0, false, {
                     fileName: "src/pages/homepage/Cart.js",
-                    lineNumber: 95,
+                    lineNumber: 96,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/homepage/Cart.js",
-            lineNumber: 78,
+            lineNumber: 79,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/pages/homepage/Cart.js",
-        lineNumber: 77,
+        lineNumber: 78,
         columnNumber: 5
     }, this);
 }
