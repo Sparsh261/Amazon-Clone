@@ -107,6 +107,7 @@ const addToCart = async (req, res) => {
 const getCartItems = async (req, res) => {
     const { authToken } = req.body;
     const user = await usersModel.findOne({ authToken });
+    const url = 'https://amazon-clone-9muu.onrender.com';
 
     try {
         if (!user) {
@@ -120,7 +121,7 @@ const getCartItems = async (req, res) => {
             const cartItems = user.cartItems;
 
             cartItems.forEach(async (id) => {
-                const res = await fetch(`http://localhost:1400/products?_id=${id}`, {
+                const res = await fetch(`${url}/products?_id=${id}`, {
                     method: 'GET',
                     headers: {
                         "Content-Type": "application/json"
