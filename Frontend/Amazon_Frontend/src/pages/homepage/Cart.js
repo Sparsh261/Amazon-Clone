@@ -57,7 +57,7 @@ export default function Cart() {
 
   const deleteCartItems = async (id) => {
     const authToken = localStorage.getItem("authTokens");
-    const res = await fetch(`http://localhost:1400/users/deleteCartItems`, {
+    const res = await fetch(`${url.default.url}/users/deleteCartItems`, {
       method: 'DELETE',
       body: JSON.stringify({
         authToken: authToken,
