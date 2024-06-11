@@ -34649,7 +34649,7 @@ function Cart() {
     (0, _react.useEffect)(getCartItemsHandler, []);
     const deleteCartItems = async (id)=>{
         const authToken = localStorage.getItem("authTokens");
-        const res = await fetch(`http://localhost:1400/users/deleteCartItems`, {
+        const res = await fetch(`${url.default.url}/users/deleteCartItems`, {
             method: "DELETE",
             body: JSON.stringify({
                 authToken: authToken,
@@ -34804,9 +34804,10 @@ exports.default = PointsContext;
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9MH2K":[function(require,module,exports) {
+// const url = 'https://amazon-clone-9muu.onrender.com';
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const url = "https://amazon-clone-9muu.onrender.com";
+const url = "https://amazon-clone-back-fooq.onrender.com";
 exports.default = {
     url
 };

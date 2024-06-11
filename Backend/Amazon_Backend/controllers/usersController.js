@@ -107,7 +107,8 @@ const addToCart = async (req, res) => {
 const getCartItems = async (req, res) => {
     const { authToken } = req.body;
     const user = await usersModel.findOne({ authToken });
-    const url = 'https://amazon-clone-9muu.onrender.com';
+    // const url = 'https://amazon-clone-9muu.onrender.com';
+    const url = 'https://amazon-clone-back-fooq.onrender.com';
 
     try {
         if (!user) {
